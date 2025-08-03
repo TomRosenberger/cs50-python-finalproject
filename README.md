@@ -59,3 +59,6 @@ The project uses the built in libraries 're' and 'sys', but it also uses the 're
 
 ## Author
 Created by **Tom Rosenberger** as a final project for the course **CS50’s Introduction to Programming with Python**.
+
+## Note:
+This repository only contains documentation and a video demo due to CS50’s academic honesty policy. The source code is not publicly available.
