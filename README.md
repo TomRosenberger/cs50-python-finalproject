@@ -6,7 +6,7 @@ Many people including myself stick to the same recipes everyday. That is why the
 
 ## Video Demo: https://youtu.be/NQexvBLxPq8
 
-## Key Features:
+## Key Features
 - Uses the **spoonacular API** to fetch recipe data from a huge database
 - Supports user-defined **filters**:
     - **Diets** (e.g. vegan, vegetarian. gluten free)
@@ -19,7 +19,7 @@ Many people including myself stick to the same recipes everyday. That is why the
 ## Spoonacular API
 Spoonacular API is a food and recipe API that provides access to a large database of recipes, including detailed nutritional information, ingredients and instructions. It also allows user to filter for specific recipes based on various criteria.
 
-## File Overview:
+## File Overview
 
 ### project.py
 
@@ -27,7 +27,7 @@ This is the main file of the project and contains:
 
 - a **main** function that guides the user through five input steps, collecting the user-defined recipe filters and passing them to the helper functions which handle the input validation and information extraction. The main function also contains loops that reprompt the user until a valid input is provided. In some cases the main function has to furthermore format the returned parameters slightly for the API call. In step six the resulting query parameters are then passed to two additional functions that handle the API call and output the formatted recipe data to text files.
 
-**Helper Functions**:
+**Helper Functions**
 
 - a **parse_diet_preferences** function that checks for optional dietary choices and ensures only supported values are accepted. It ensures that the diet choices are separated by a comma, as otherwise the information can't be processed. It validates each entry against a defined list of allowed diets (vegan, vegetarian, gluten free). If the user provides both vegan and vegetarian at the same time (which is logically inconsistent) the function returns None, displays a corresponding message and the user will be reprompted by main. If the user input is valid the function returns a cleaned **string** suitable for the API query. If the user input is invalid the function returns 'None' and the user will be reprompted by main. If the user types 'no', the function returns 'no' as a string and skips diet preferences.
 
@@ -60,5 +60,5 @@ The project uses the built in libraries 're' and 'sys', but it also uses the 're
 ## Author
 Created by **Tom Rosenberger** as a final project for the course **CS50’s Introduction to Programming with Python**.
 
-## Note:
+## Note
 This repository only contains documentation and a video demo due to CS50’s academic honesty policy. The source code is not publicly available.
